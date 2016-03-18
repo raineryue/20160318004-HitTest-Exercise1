@@ -20,7 +20,7 @@
     // 获取按钮的点
     CGPoint blueButtonPoint = [self convertPoint:point toView:self.blueButton];
     
-    // 判断该点是否在按钮视图上：如果是则返回按钮视图，如果不是则返回父视图
+    // 判断该点是否在按钮视图上：如果是则返回按钮视图，如果不是则返回系统默认处理方法
     if ([self.blueButton pointInside:blueButtonPoint withEvent:event]) {
         return self.blueButton;
     } else {
